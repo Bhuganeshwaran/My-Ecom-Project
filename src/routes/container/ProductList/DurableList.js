@@ -61,7 +61,7 @@ function DurableList() {
       <h1>Durables</h1>
       <div className="d-flex flex-wrap">
        {durables.map((item1) => {
-          return <ProductCard products={item1} />;
+          return <ProductCard appliances={item1} key={item1.id} />;
       })}
       </div>
     </div>

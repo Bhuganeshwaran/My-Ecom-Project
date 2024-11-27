@@ -50,7 +50,7 @@ function GroceryList() {
       <h1>Groceries</h1>
       <div className="d-flex flex-wrap">
       {grocery.map((item2) => {
-        return <ProductCard products={item2} />;
+        return <ProductCard foodProducts={item2} key={item2.id} />;
       })} 
       </div>
     </div>

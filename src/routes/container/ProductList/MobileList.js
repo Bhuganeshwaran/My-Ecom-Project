@@ -80,7 +80,7 @@ function MobileList() {
       <h1>Smart Phones</h1>
       <div className="d-flex flex-wrap">
         {Mobiles.map((item) => {
-          return <ProductCard products={item} />;
+          return <ProductCard products={item} key={item.id}/>;
         })}
       </div>
     </div>
